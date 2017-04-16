@@ -4,7 +4,7 @@
   <ul>
     {% for item in site.data.nav.main %}
       <li class="page-scroll">
-        <a class="{% if pageUrl == item.href %}active{% endif %}" href="{{item.href}}">{{item.text}}</a>
+        <a class="" href="{{item.href}}">{{item.text}}</a>
       </li>
     {% endfor %}
   </ul>
@@ -21,8 +21,8 @@
             </div>
             <ul class="menu">
               {% for item in site.data.nav.main %}
-                <li class="page-scroll">
-                  <a class="{% if pageUrl == item.href %}active{% endif %}" href="{{item.href}}">{{item.text}}</a>
+                <li class="page-scroll {% if forloop.first %}active{% endif %}">
+                  <a href="{{item.href}}">{{item.text}}</a>
                 </li>
               {% endfor %}
             </ul>
