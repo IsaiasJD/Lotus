@@ -4,43 +4,26 @@
             <h2>Testimonials</h2>
             <div id="myCarousel-2" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <div class="img-left"><img src="http://www.placehold.it/150x150" alt="Testimonial" class="img-responsive"></div>
+                  {% for review in site.data.reviews %}
+                    <div class="item {% if forloop.first %}active{% endif %}">
+                        <div class="img-left">
+                          {% if review.reviewerImage.size > 0 %}
+                            <img src="http://www.placehold.it/150x150" alt="Testimonial" class="img-responsive">
+                          {% else %}
+                            <img src="assets/images/default-user-image.png" alt="Testimonial" class="img-responsive">
+                          {% endif %}
+                        </div>
                         <div class="col-pad4 tbg-white">
-                            <h4>Free hair treatment</h4>
-                            <h6>Advertising Model</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet
-                                nisi erat et lectus.</p>
+                            <h4>{% if review.reviewerName.size > 0 %}{{review.reviewerName}}{% else %}Client{% endif %}</h4>
+                            <span>
+                                {% for star in (1..review.starRating) %}
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                {% endfor %}
+                            </span>
+                            <p>{{review.reviewText}}</p>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="img-left"><img src="http://www.placehold.it/150x150" alt="Testimonial" class="img-responsive"></div>
-                        <div class="col-pad4 tbg-white">
-                            <h4>Monday Makeup</h4>
-                            <h6>Advertising Model</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet
-                                nisi erat et lectus.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img-left"><img src="http://www.placehold.it/150x150" alt="Testimonial" class="img-responsive"></div>
-                        <div class="col-pad4 tbg-white">
-                            <h4>Free hair treatment</h4>
-                            <h6>Advertising Model</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet
-                                nisi erat et lectus.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img-left"><img src="http://www.placehold.it/150x150" alt="Testimonial" class="img-responsive"></div>
-                        <div class="col-pad4 tbg-white">
-                            <h4>Monday Makeup</h4>
-                            <h6>Advertising Model</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet
-                                nisi erat et lectus.</p>
-                        </div>
-                    </div>
-
+                    {% endfor %}
                 </div>
                 <div class="carousel-control">
                     <a class="left" href="#myCarousel-2" role="button" data-slide="prev"></a>
