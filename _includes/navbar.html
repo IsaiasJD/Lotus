@@ -1,16 +1,4 @@
-
-{% assign pageUrl = page.url | replace_first: '/', '' %}
-<div id="mobile-menu">
-  <ul>
-    {% for item in site.data.nav.main %}
-      <li class="page-scroll">
-        <a class="" href="{{item.href}}">{{item.text}}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-<div id="page">
-  <header id="pagetop">
+<header id="pagetop">
     <nav>
       <div class="container">
         <div class="row">
@@ -21,7 +9,7 @@
             </div>
             <ul class="menu">
               {% for item in site.data.nav.main %}
-                <li class="page-scroll {% if forloop.first %}active{% endif %}">
+                <li class="page-scroll">
                   <a href="{{item.href}}">{{item.text}}</a>
                 </li>
               {% endfor %}

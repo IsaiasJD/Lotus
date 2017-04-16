@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 {% include header.html %}
-
   <body>
-
-    {% include navbar.html %}
-
-    {% include about-us.html %}
-
-    {% include our-team.html %}
-
-    {% include services.html %}
-
-    {% include gallery.html %}
-
-    {% include testimonials.html %}
-
-    {% include contact.html %}
-
-    {% include footer.html %}
-
-    <a href="#" class="scrollup">Top</a>
-
-    {% include scripts.html %}
-
+      <div id="mobile-menu">
+        <ul>
+          {% for item in site.data.nav.main %}
+            <li class="page-scroll">
+              <a class="" href="{{item.href}}">{{item.text}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="page">
+        {% include navbar.html %}
+        {% include slider.html %}
+        {% include about-us.html %}
+        {% include our-team.html %}
+        {% include services.html %}
+        {% include gallery.html %}
+        {% include testimonials.html %}
+        {% include contact.html %}
+        {% include footer.html %}
+        <a href="#" class="scrollup">Top</a>
+      </div>
+      {% include scripts.html %}
     </body>
 </html>
