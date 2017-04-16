@@ -1,0 +1,11 @@
+nav {
+.lotus {
+    max-height: 75px;
+  }
+  li.active {
+    ul.menu li a:active {
+   color: #000;
+   background: #fff;
+  }
+}
+}
