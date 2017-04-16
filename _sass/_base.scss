@@ -1,0 +1,7 @@
+section:not(.footer-first):not(.footer-second) {
+    min-height: 100vh !important;
+    @media only screen and (max-width: 480px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}

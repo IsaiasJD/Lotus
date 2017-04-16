@@ -1,0 +1,22 @@
+{
+    "main": [{
+            "href": "#about-us",
+            "text": "About Us"
+        }, {
+            "href": "#meet-our-team",
+            "text": "Meet Our Team"
+        }, {
+            "href": "#services",
+            "text": "Services"
+        },{
+            "href": "#gallery",
+            "text": "Gallery"
+        },{
+            "href": "#testimonials",
+            "text": "Reviews"
+        }, {
+            "href": "#contact",
+            "text": "Contact Us"
+        }
+    ]
+}
