@@ -1,0 +1,33 @@
+{
+    "hof":[
+      {
+      "weekday": "Sunday",
+      "hours": "Closed",
+      },
+      {
+        "weekday": "Monday",
+        "hours": "9AM–7PM",
+      },
+      {
+        "weekday": "Tuesday",
+        "hours": "9AM–7PM",
+      },
+      {
+        "weekday": "Wednesday",
+        "hours": "9AM–7PM",
+      },
+      {
+        "weekday": "Thursday",
+        "hours": "9AM–7PM",
+      },
+      {
+        "weekday": "Friday",
+        "hours": "9AM–7PM",
+      },
+      {
+        "weekday": "Saturday",
+        "hours": "Closed",
+      },
+
+    ]
+}
