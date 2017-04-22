@@ -1,0 +1,96 @@
+{
+  "services":[
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-2.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-3.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-4.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-5.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-6.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-7.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-8.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-9.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-10.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-11.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-12.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-13.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-14.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-15.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-16.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-17.jpg"
+    },
+    {
+      "type": "styling",
+      "picture": "assets/images/Styles-18.jpg"
+    },
+    {
+      "type": "coloring",
+      "picture": "assets/images/Styles-19.jpg"
+    },
+    {
+      "type": "cutting",
+      "picture": "assets/images/Misc-2.jpg"
+    },
+    {
+      "type": "cutting",
+      "picture": "assets/images/Misc-3.jpg"
+    },
+    {
+      "type": "cutting",
+      "picture": "assets/images/Misc-4.jpg"
+    },
+    {
+      "type": "cutting",
+      "picture": "assets/images/Misc-5.jpg"
+    }
+  ]
+}
