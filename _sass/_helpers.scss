@@ -38,3 +38,15 @@
 .text-uppercase {
     text-transform: uppercase
 }
+
+// background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+// background-position
+// background-size
+// background-image: url('')
+// background-repeat:
+//
+.image-fill{
+  //background: url(../assets/images/laundry-saloon-large.gif) center no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
