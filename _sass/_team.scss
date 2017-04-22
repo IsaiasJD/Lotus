@@ -1,0 +1,27 @@
+#meet-our-team {
+  .card-member {
+    height: 44rem;
+    border-radius: 0!important;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.26);
+
+    .card-image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .card-content {
+      background-color: #fff;
+      height: 100%;
+    }
+
+    .member-name {
+      color: rgba(0,0,0, .9);
+      font-weight: normal;
+    }
+
+    .member-description {
+      color: rgba(0,0,0, .75);
+    }
+  }
+}
