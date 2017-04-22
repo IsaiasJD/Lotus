@@ -6,12 +6,7 @@
       {
         "platform": "Facebook",
         "class": "facebook",
-        "link": ""
-      },
-      {
-        "platform": "Twitter",
-        "class": "twitter",
-        "link": ""
+        "link": "https://www.facebook.com/Lotus2Salon/"
       }
     ],
     "imagePath": "assets/images/Worker-1.jpg",
