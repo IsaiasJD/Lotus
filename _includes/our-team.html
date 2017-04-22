@@ -4,15 +4,15 @@
             <div class="col-sm-12 layout-padding">
                 <h2 class="center">Meet our Expert Stylists</h2>
                 <div class="center ourteamd">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus viverra nec. Nullam cursus, neque non congue aliquam, mauris massa consequat sem, ut laoreet nisi erat
-                        et lectus. Nullam non neque eros. Pellentesque nec vulputate eros.</p>
+                    <p>Whether it is a special occasion or a revitalization, we pride ourselves in the ability to provide the ultimate
+                 salon experience with the help of our dedicated team of experts.</p>
                 </div>
             </div>
             <div class="col-xs-12 layout-padding">
                 <div class="responsive">
                   {% for member in site.data.team %}
-                    <div>
-                        <div class="third-effect">
+                    <div class="col-xs-12 col-sm-3 col-md-3 card-member">
+                        <div class="third-effect card-image">
                             {% if member.imagePath.size > 0 %}
                               <img src="{{member.imagePath}}" class="img-responsive" alt="Our Team">
                             {% else %}
@@ -21,14 +21,14 @@
                             {% if member.socialMedias.size > 0 %}
                             <div class="mask">
                               {% for platform in member.socialMedias %}
-                                <a class="{{platform.class}}" href="{{platform.link}}">{{platform.platform}}</a>
+                                <a class="{{platform.class}}" target="_blank" href="{{platform.link}}">{{platform.platform}}</a>
                               {% endfor %}
                             </div>
                             {% endif %}
                         </div>
-                        <div class="team">
-                            <h3 class="center">{{member.firstName}} {{member.lastName}}</h3>
-                            <p class="center">{{member.description}}</p>
+                        <div class="team card-content layout-padding">
+                            <h3 class="center member-name">{{member.firstName}} {{member.lastName}}</h3>
+                            <p class="center member-description">{{member.description}}</p>
                         </div>
                     </div>
                   {% endfor %}
