@@ -1838,3 +1838,6 @@ h2.color {
 	padding-top: 70px;
 }
 }
+.title h2 {
+	margin-bottom: 20px !important;
+}
