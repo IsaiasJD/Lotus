@@ -4,21 +4,24 @@
             <div class="col-lg-12">
                 <h2>Contact</h2>
             </div>
-            <div class="">
+            <div class="col-lg-12">
                 <div class="contactmap">
                     <div class="mapcont">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.7582821603614!2d-116.23365638471661!3d33.71520308069899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80daf829e9a087ed%3A0xa42a8f09f6d17948!2s82182+CA-111%2C+Indio%2C+CA+92201!5e0!3m2!1sen!2sus!4v1492377254167
-                            style="border:0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.7582821603614!2d-116.23365638471661!3d33.71520308069899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80daf829e9a087ed%3A0xa42a8f09f6d17948!2s82182+CA-111%2C+Indio%2C+CA+92201!5e0!3m2!1sen!2sus!4v1492377254167"
+                        style="border:0"></iframe>
                     </div>
                     <div class="social">
-                      <h6>Contact Information:</h6>
+                    <div class="">
+                      <span><h6>Contact Information:</h6></span>
                         <span>82182 CA-111, Indio, CA 92201</span><br>
-                        <span>Phone - (760) 775-7473 </span> <br><span>Email - <a href="mailto:info@websitec.com">MFausto@Lotus2Salon.com</a></span><br>
+                        <span>Phone - (760) 775-7473 </span> <br><span>Email - MFausto@Lotus2Salon.com</span><br>
                         <br>
-                        <h6>Hours of Operation:</h6>
+                      </div>
+                      <div class="">
+                        <span><h6>Hours of Operation:</h6></span>
                         {% for item in site.data.contact.hof %}
                           <span>
-                            <a>{{item.weekday}}: {{item.hours}}</a><br>
+                            {{item.weekday}}: {{item.hours}}<br>
                           </span>
                         {% endfor %}
                         <div class="social-icon">
@@ -28,6 +31,7 @@
                             <a href="#" class="youtube"></a>
                         </div>
                     </div>
+                  </div>
                     <div class="clearfix"></div>
                 </div>
             </div>

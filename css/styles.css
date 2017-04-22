@@ -478,12 +478,13 @@ header {
   ========================================================================== */
 
 #contact {
-	background: url(http://www.placehold.it/2560x1440) no-repeat left center #ccc;
+	background: url("../assets/images/Tools-1.jpg") no-repeat #ccc;
 	padding: 100px 0px;
+	background-size:cover;
 }
 #contact h2 {
 	margin-bottom: 25px;
-	color: #000;
+	color: white;
 }
 .mapcont {
 	float: left;
@@ -499,7 +500,7 @@ header {
 	width: 100%
 }
 .contactmap {
-	background: #000;
+	background: rgba(0, 0, 0, .7);
 	width: 95%;
 	float: left;
 }
@@ -513,11 +514,16 @@ header {
 .social {
 	float: right;
 	width: 38%;
-	padding: 61px 40px 61px;
+	padding: 20px !important;
+	color: white;
 }
 .social p {
 	margin-bottom: 15px;
 }
+.social h6 {
+	font-weight: normal;
+}
+
 .social-icon {
 	width: 100%;
 	margin: 20px 0 0;
