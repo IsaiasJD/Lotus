@@ -8,12 +8,12 @@
 	Gellery Portolio
 	Date Picker
 	Form Validation
-	
+
  */
 
 $(document).ready(function () {
 	'use strict';
-	
+
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 		$('body').on('click', '.page-scroll a', function(event) {
@@ -22,19 +22,19 @@ $(document).ready(function () {
 				scrollTop: $($anchor.attr('href')).offset().top
 			}, 1500, 'easeInOutExpo');
 			event.preventDefault();
-		
+
 		});
 	});
-	
+
 	//Main slider fuction
 	$('.carousel').carousel({
   		interval: 3000
-		
+
 	})
-	
+
 	// Parallaxe  function
 	$('#parallax-2').parallax("50%",0.5);
-	
+
 	// Carousel mini slider function
 	$('.responsive').slick({
 	  dots: false,
@@ -76,9 +76,9 @@ $(document).ready(function () {
 		  }
 		}
 	  ]
-	});	
-			
-	// mobile menu function		
+	});
+
+	// mobile menu function
 	$("#mobile-menu").mobileMenu({
 			MenuWidth: 250,
 			SlideSpeed : 300,
@@ -88,66 +88,11 @@ $(document).ready(function () {
 			Overlay : true,
 			CollapseMenu : true,
 			ClassName : "mobile-menu"
-		});	
-		
-	// Gellery Portfolio function		
-	$('.fancybox').fancybox();
-	// Gellery function end	
-	
-	//date picker function
-		$('#datePicker').datepicker({
-					format: 'dd/mm/yyyy',
-					autoclose: true,
-					clearBtn: true,
-					todayHighlight: true
-		})
-		//.on('changeDate', function(e) {
-		// Revalidate the date field
-		//$('#AppointmentForm').bootstrapValidator('revalidateField', 'date');
-		.on('change', function() {
-        $('#datePicker').valid();  // triggers the validation test on change
+		});
 
-	});
-	
-	////AppointmentForm//////////
-	$("#AppointmentFrm").validate({
-		errorElement: "p",
-		submitHandler: function(){
-			var dataString = $("form#AppointmentFrm").serialize();
-			$.ajax({
-			type: "POST",
-			url: "appointmentsend.php",
-			cache: false,
-			data: dataString,
-			success:function(data)
-			{	
-				if(data==1)
-				{	
-					$("#SuccessMessage").slideDown(500);
-					$("#SuccessMessage").html("<div class='alert alert-success'><strong>Success!</strong> Your message has been sent to us.</div>");
-					//document.getElementById("SuccessMessage").style.color='#FF0000';
-					//document.getElementById('AppointmentFrm').reset();
-					$("#AppointmentFrm")[0].reset();
-					return false;
-					
-				}
-				else
-				{
-					$("#ErrorMessage").slideDown(500);
-					$("#ErrorMessage").html("<div class='alert alert-danger'><strong>Error!</strong> There was an error sending your message.</div>");
-					//document.getElementById("ErrorMessage").style.color='#FF0000';
-					//document.getElementById('AppointmentFrm').reset();
-					$("#AppointmentFrm")[0].reset();
-					return false;
-					
-				}
-			},
-			
-		}); 
-		return false;
-		}
-	});
-	///AppointmentForm///////////
+	// Gellery Portfolio function
+	$('.fancybox').fancybox();
+	// Gellery function end
 
 	//////ContactForm////////
 	$("#ContactForm").validate({
@@ -160,9 +105,9 @@ $(document).ready(function () {
 			cache: false,
 			data: dataString,
 			success:function(data)
-			{	
+			{
 				if(data==1)
-				{	 
+				{
 					$("#ContactSuccessMessage").slideDown(500);
 					$("#ContactSuccessMessage").html("<div class='alert alert-success'><strong>Success!</strong> Your message has been sent to us.</div>");
 					//document.getElementById("ContactSuccessMessage").style.color='#FF0000';
@@ -178,12 +123,12 @@ $(document).ready(function () {
 					return false;
 				}
 			},
-			
-		}); 
+
+		});
 		return false;
 		}
 	});
-	
+
 	// portfolio 4 page function
 	$(window).load(function(){
 	var $container = $('.blogmasonary');
@@ -195,8 +140,8 @@ $(document).ready(function () {
             queue: true
         }
     });
-	
-	
+
+
 	var $container = $('.portfoliodiv');
     $container.isotope({
         filter: '*',
@@ -207,11 +152,11 @@ $(document).ready(function () {
             queue: true
         }
     });
-	 
+
     $('.filter ul li a').click(function(){
         $('.filter .active').removeClass('active');
         $(this).addClass('active');
- 
+
         var selector = $(this).attr('data-filter');
 			if(selector=="*") $(selector).children("a.fancybox").attr("data-fancybox-group","gallery" );
 		else	$(selector).children("a.fancybox").attr("data-fancybox-group",selector.substring(1) );
@@ -223,12 +168,12 @@ $(document).ready(function () {
             }
          });
          return false;
-    }); 
-	
+    });
+
 	});
 	// animation
-	 
-	 
+
+
 	//scroll top function
 	$(window).scroll(function () {
         if ($(this).scrollTop() > 500) {
@@ -244,11 +189,10 @@ $(document).ready(function () {
         }, 800);
         return false;
     });
-	
+
 });
  $(window).load(function() {
-	 
+
 	 new WOW().init();
-	 });   
- //hide all the div containers inside div with id=accordion  
-       
+	 });
+ //hide all the div containers inside div with id=accordion

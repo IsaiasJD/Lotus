@@ -3,18 +3,17 @@
 /*------------------------------------------------------------------
 Name: Master.css
 
-Project:	Blackair 
+Project:	Blackair
 Version:	1.1
 Last change:	21/05/2015 [fixed Float bug, vf]
 Assigned to:	Lithemes
 Primary use:	Salon Business
 
-all Css defined in this css  
+all Css defined in this css
 -------------------------------------------------------------------*/
 
 @import url("../css/styles.css");
 @import url("../css/bootstrap.css");
-@import url("../css/datepicker.css");
 @import url("../css/lightbox.css");
 @import url("../css/menu.css");
 @import url("../css/slick.css");
@@ -25,4 +24,3 @@ all Css defined in this css
 @import url("../css/navigation.css");
 @import url("../css/settings.css");
 @import url("../css/layers.css");
-

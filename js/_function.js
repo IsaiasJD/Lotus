@@ -8,33 +8,33 @@
 	Gellery Portolio
 	Date Picker
 	Form Validation
-	
+
  */
 
 $(document).ready(function () {
 	'use strict';
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
-    	
+
 		$('body').on('click', '.page-scroll a', function(event) {
 			var $anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top
 			}, 1500, 'easeInOutExpo');
 			event.preventDefault();
-		
+
 		});
 	});
-	
+
 	//Main slider fuction
 	$('.carousel').carousel({
   		interval: 3000
-		
+
 	})
-	
+
 	// Parallaxe  function
 	$('#parallax-2').parallax("50%",0.5);
-	
+
 	// Carousel mini slider function
 	$('.responsive').slick({
 	  dots: false,
@@ -76,9 +76,9 @@ $(document).ready(function () {
 		  }
 		}
 	  ]
-	});	
-			
-	// mobile menu function		
+	});
+
+	// mobile menu function
  		$("#mobile-menu").mobileMenu({
                 MenuWidth: 250,
                 SlideSpeed : 300,
@@ -88,28 +88,15 @@ $(document).ready(function () {
                 Overlay : true,
                 CollapseMenu : true,
                 ClassName : "mobile-menu"
-            });	
-			
-		// Gellery Portfolio function		
+            });
+
+		// Gellery Portfolio function
 		$('.fancybox').fancybox();
-		// Gellery function end	
-		
-		//date picker function
-			$('#datePicker').datepicker({
-            			format: 'dd/mm/yyyy',
-						autoclose: true,
-						clearBtn: true,
-						todayHighlight: true
-        	})
-      	.on('changeDate', function(e) {
-   
-            // Revalidate the date field
-            $('#defaultForm').bootstrapValidator('revalidateField', 'date');
-        });
+		// Gellery function end
 
 
 	//form Validation function
-	/*var form = $(this); 
+	/*var form = $(this);
 	var post_url = form.attr('action'); */
 	$('#defaultForm').bootstrapValidator({
 	    //live: 'disabled',
@@ -166,8 +153,8 @@ $(document).ready(function () {
                 }
             }
 		},
-		
-		
+
+
 		//////////////
 		submitHandler: function(){
 			var dataString = $("form#defaultForm").serialize();
@@ -179,7 +166,7 @@ $(document).ready(function () {
 			success:function(data)
 			{	alert (data);
 				if(data==1)
-				{	 
+				{
 					$("#ContactSuccessMessage").slideDown(2500);
 					$("#ContactSuccessMessage").html("<strong>Success!</strong> Your message has been sent to us.");
 					document.getElementById("ContactSuccessMessage").style.color='#FF0000';
@@ -187,22 +174,22 @@ $(document).ready(function () {
 				}
 				else
 				{
-					
+
 				$("#ContactErrorMessage").slideDown(2500);
 				$("#ContactErrorMessage").html("<strong>Error!</strong> There was an error sending your message.");
 				document.getElementById("ContactErrorMessage").style.color='#FF0000';
 					return false;
 				}
 			},
-			
-		}); 
+
+		});
 		return false;
 		}
 		//////////////
   });
-   
-  
-	//Contact Form 
+
+
+	//Contact Form
 	//$("#defaultForm").validate({
 	/*$("#defaultForm").bootstrapValidator({
 		errorElement: "p",
@@ -216,7 +203,7 @@ $(document).ready(function () {
 			success:function(data)
 			{	alert (data);
 				if(data==1)
-				{	 
+				{
 					$("#ContactSuccessMessage").slideDown(2500);
 					$("#ContactSuccessMessage").html("<strong>Success!</strong> Your message has been sent to us.");
 					document.getElementById("ContactSuccessMessage").style.color='#FF0000';
@@ -224,19 +211,19 @@ $(document).ready(function () {
 				}
 				else
 				{
-					
+
 				$("#ContactErrorMessage").slideDown(2500);
 				$("#ContactErrorMessage").html("<strong>Error!</strong> There was an error sending your message.");
 				document.getElementById("ContactErrorMessage").style.color='#FF0000';
 					return false;
 				}
 			},
-			
-		}); 
+
+		});
 		return false;
 		}
 	});*/
-	//Contact Form 
+	//Contact Form
 	   	//contact form function
 		$('#contactfrm').bootstrapValidator({
 
@@ -250,7 +237,7 @@ $(document).ready(function () {
                 }
             },
             inputEamil: {
-				
+
                 validators: {
 					notEmpty: {
                         message: 'This field is required'
@@ -275,13 +262,13 @@ $(document).ready(function () {
 					notEmpty: {
                         message: 'This field is required'
                     }
-                    
+
                 }
             }
-			
+
 		},
-		
-		
+
+
 		//////////////
 		submitHandler: function(){
 			var dataString = $("form#contactfrm").serialize();
@@ -293,7 +280,7 @@ $(document).ready(function () {
 			success:function(data)
 			{	alert (data);
 				if(data==1)
-				{	 
+				{
 					$("#ContactSuccessMessage").slideDown(2500);
 					$("#ContactSuccessMessage").html("<strong>Success!</strong> Your message has been sent to us.");
 					document.getElementById("ContactSuccessMessage").style.color='#FF0000';
@@ -301,20 +288,20 @@ $(document).ready(function () {
 				}
 				else
 				{
-					
+
 				$("#ContactErrorMessage").slideDown(2500);
 				$("#ContactErrorMessage").html("<strong>Error!</strong> There was an error sending your message.");
 				document.getElementById("ContactErrorMessage").style.color='#FF0000';
 					return false;
 				}
 			},
-			
-		}); 
+
+		});
 		return false;
 		}
 		//////////////
 
-		
-    }); 
-	
+
+    });
+
 });

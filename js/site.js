@@ -46,9 +46,13 @@
         var startTime = parseInt(self.hoursOfOperationByDay[self.currentDayOfWeek].startTime);
         var endTime = parseInt(self.hoursOfOperationByDay[self.currentDayOfWeek].endTime);
         var isOpen = self.hoursOfOperationByDay[self.currentDayOfWeek].isOpen;
-        var isOpenText = "Open today from "
-                          + moment({hour: startTime}).format("h:mma")
-                          + " to " + moment({hour: endTime}).format("h:mma");
+        var isOpenText = "Open today from " +
+          moment({
+            hour: startTime
+          }).format("h:mma") +
+          " to " + moment({
+            hour: endTime
+          }).format("h:mma");
         var isClosedText = "Closed Today";
         var html = isOpen ? isOpenText : isClosedText;
         self.timeDisplaySpan.html(html);
@@ -77,12 +81,20 @@
 
     }
 
+    function setSpinner() {
+      $(window).load(function() {
+        $(".loader").delay(300).fadeOut();
+        $(".animationload").delay(600).fadeOut("slow");
+      });
+    }
+
     function init() {
       var timeDisplay = new TimeDisplay();
       var navbar = new Navbar();
 
       timeDisplay.setDOM()
       navbar.bindListItemAnchorsClickEv();
+      setSpinner();
     }
 
     init();
