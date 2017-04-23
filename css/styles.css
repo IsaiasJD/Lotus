@@ -2083,3 +2083,6 @@ p.error {
   margin: -100px 0 0 -100px;
   /* is width and height divided by two */
 }
+.title h2 {
+	margin-bottom: 20px !important;
+}
