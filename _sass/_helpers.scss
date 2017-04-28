@@ -52,3 +52,11 @@
   overflow: hidden;
   background-size: cover;
 }
+
+.image-contain {
+  //background: url(../assets/images/laundry-saloon-large.gif) center no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: contain;
+}
