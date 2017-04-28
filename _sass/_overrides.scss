@@ -1,0 +1,63 @@
+nav {
+  background-color: rgba(0,0,0,.9);
+}
+
+ul.menu li {
+  &.active {
+    a {
+      color: #fff !important;
+      background: $primary-color !important;
+    }
+  }
+
+  &:hover {
+    a {
+      color: #fff;
+      background: $primary-color;
+    }
+  }
+}
+
+body {
+  background-color: #eee;
+  color: rgba(0,0,0,.84);
+}
+
+h2.section-title {
+  color: $primary-color;
+  font-weight: normal;
+}
+
+footer {
+  background-color: #000;
+  color: #eee;
+
+  a {
+    &:hover {
+      color: $primary-color;
+    }
+    color: $primary-color;
+  }
+}
+
+#time-display {
+  font-family: inherit;
+  color: $primary-color;
+  font-size: 20px;
+}
+
+.white-bg {
+  padding: 15px;
+}
+
+.testimonilabg {
+  height: 50rem;
+}
+
+.section {
+  padding-top: 150px;
+}
+
+.loader {
+  color: #eee;
+}

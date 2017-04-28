@@ -46,7 +46,7 @@
         var startTime = parseInt(self.hoursOfOperationByDay[self.currentDayOfWeek].startTime);
         var endTime = parseInt(self.hoursOfOperationByDay[self.currentDayOfWeek].endTime);
         var isOpen = self.hoursOfOperationByDay[self.currentDayOfWeek].isOpen;
-        var isOpenText = "Open today from " +
+        var isOpenText = "Today: <strong>Open</strong> " +
           moment({
             hour: startTime
           }).format("h:mma") +

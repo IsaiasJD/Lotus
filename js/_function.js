@@ -33,7 +33,7 @@ $(document).ready(function () {
 	})
 
 	// Parallaxe  function
-	$('#parallax-2').parallax("50%",0.5);
+	//$('#parallax-2').parallax("50%",0.5);
 
 	// Carousel mini slider function
 	$('.responsive').slick({
@@ -98,95 +98,95 @@ $(document).ready(function () {
 	//form Validation function
 	/*var form = $(this);
 	var post_url = form.attr('action'); */
-	$('#defaultForm').bootstrapValidator({
-	    //live: 'disabled',
-        message: 'This value is not valid',
-        fields: {
-            name: {
-                row: '.appname',
-                validators: {
-                    notEmpty: {
-                        message: 'This field is required'
-                    }
-                }
-            },
-            email: {
-				validators: {
-					notEmpty: {
-                        message: 'This field is required'
-                    },
-                    emailAddress: {
-                        message: 'The input is not a valid email address'
-                    }
-                }
-            },
-			phone: {
-				validators: {
-					notEmpty: {
-                        message: 'This field is required'
-                    },
-                    digits: {
-                        message: 'The value can contain only digits'
-                    }
-                }
-            },
-			date: {
-                validators: {
-                    notEmpty: {
-                        message: 'The date is required'
-                    },
-                    dateinput: {
-                        format: 'DD/MM/YYYY',
-                        message: 'The date DD/MM/YYYY'
-                    }
-                }
-            },
-			inputdate: {
-                validators: {
-                    notEmpty: {
-                        message: 'The date is required'
-                    },
-                    dateformat: {
-                        format: 'MM/DD/YYYY',
-                        message: 'The date MM/DD/YYYY'
-                    }
-                }
-            }
-		},
-
-
-		//////////////
-		submitHandler: function(){
-			var dataString = $("form#defaultForm").serialize();
-			$.ajax({
-			type: "POST",
-			url: "http://lithemes.com/projects/wordpress/blackair/wp-content/themes/mytheme/send.php",
-			cache: false,
-			data: dataString,
-			success:function(data)
-			{	alert (data);
-				if(data==1)
-				{
-					$("#ContactSuccessMessage").slideDown(2500);
-					$("#ContactSuccessMessage").html("<strong>Success!</strong> Your message has been sent to us.");
-					document.getElementById("ContactSuccessMessage").style.color='#FF0000';
-					return false;
-				}
-				else
-				{
-
-				$("#ContactErrorMessage").slideDown(2500);
-				$("#ContactErrorMessage").html("<strong>Error!</strong> There was an error sending your message.");
-				document.getElementById("ContactErrorMessage").style.color='#FF0000';
-					return false;
-				}
-			},
-
-		});
-		return false;
-		}
-		//////////////
-  });
+	// $('#defaultForm').bootstrapValidator({
+	//     //live: 'disabled',
+  //       message: 'This value is not valid',
+  //       fields: {
+  //           name: {
+  //               row: '.appname',
+  //               validators: {
+  //                   notEmpty: {
+  //                       message: 'This field is required'
+  //                   }
+  //               }
+  //           },
+  //           email: {
+	// 			validators: {
+	// 				notEmpty: {
+  //                       message: 'This field is required'
+  //                   },
+  //                   emailAddress: {
+  //                       message: 'The input is not a valid email address'
+  //                   }
+  //               }
+  //           },
+	// 		phone: {
+	// 			validators: {
+	// 				notEmpty: {
+  //                       message: 'This field is required'
+  //                   },
+  //                   digits: {
+  //                       message: 'The value can contain only digits'
+  //                   }
+  //               }
+  //           },
+	// 		date: {
+  //               validators: {
+  //                   notEmpty: {
+  //                       message: 'The date is required'
+  //                   },
+  //                   dateinput: {
+  //                       format: 'DD/MM/YYYY',
+  //                       message: 'The date DD/MM/YYYY'
+  //                   }
+  //               }
+  //           },
+	// 		inputdate: {
+  //               validators: {
+  //                   notEmpty: {
+  //                       message: 'The date is required'
+  //                   },
+  //                   dateformat: {
+  //                       format: 'MM/DD/YYYY',
+  //                       message: 'The date MM/DD/YYYY'
+  //                   }
+  //               }
+  //           }
+	// 	},
+	//
+	//
+	// 	//////////////
+	// 	submitHandler: function(){
+	// 		var dataString = $("form#defaultForm").serialize();
+	// 		$.ajax({
+	// 		type: "POST",
+	// 		url: "http://lithemes.com/projects/wordpress/blackair/wp-content/themes/mytheme/send.php",
+	// 		cache: false,
+	// 		data: dataString,
+	// 		success:function(data)
+	// 		{	alert (data);
+	// 			if(data==1)
+	// 			{
+	// 				$("#ContactSuccessMessage").slideDown(2500);
+	// 				$("#ContactSuccessMessage").html("<strong>Success!</strong> Your message has been sent to us.");
+	// 				document.getElementById("ContactSuccessMessage").style.color='#FF0000';
+	// 				return false;
+	// 			}
+	// 			else
+	// 			{
+	//
+	// 			$("#ContactErrorMessage").slideDown(2500);
+	// 			$("#ContactErrorMessage").html("<strong>Error!</strong> There was an error sending your message.");
+	// 			document.getElementById("ContactErrorMessage").style.color='#FF0000';
+	// 				return false;
+	// 			}
+	// 		},
+	//
+	// 	});
+	// 	return false;
+	// 	}
+	// 	//////////////
+  // });
 
 
 	//Contact Form
@@ -225,80 +225,80 @@ $(document).ready(function () {
 	});*/
 	//Contact Form
 	   	//contact form function
-		$('#contactfrm').bootstrapValidator({
-
-        message: 'This value is not valid',
-        fields: {
-            inputName: {
-                validators: {
-                    notEmpty: {
-                        message: 'This field is required'
-                    }
-                }
-            },
-            inputEamil: {
-
-                validators: {
-					notEmpty: {
-                        message: 'This field is required'
-                    },
-                    emailAddress: {
-                        message: 'email address Not valid'
-                    }
-                }
-            },
-			inputcontact: {
-			    validators: {
-					notEmpty: {
-                        message: 'This field is required'
-                    },
-                    digits: {
-                        message: 'The value digits only'
-                    }
-                }
-            },
-			cname: {
-                validators: {
-					notEmpty: {
-                        message: 'This field is required'
-                    }
-
-                }
-            }
-
-		},
+		// $('#contactfrm').bootstrapValidator({
+		//
+    //     message: 'This value is not valid',
+    //     fields: {
+    //         inputName: {
+    //             validators: {
+    //                 notEmpty: {
+    //                     message: 'This field is required'
+    //                 }
+    //             }
+    //         },
+    //         inputEamil: {
+		//
+    //             validators: {
+		// 			notEmpty: {
+    //                     message: 'This field is required'
+    //                 },
+    //                 emailAddress: {
+    //                     message: 'email address Not valid'
+    //                 }
+    //             }
+    //         },
+		// 	inputcontact: {
+		// 	    validators: {
+		// 			notEmpty: {
+    //                     message: 'This field is required'
+    //                 },
+    //                 digits: {
+    //                     message: 'The value digits only'
+    //                 }
+    //             }
+    //         },
+		// 	cname: {
+    //             validators: {
+		// 			notEmpty: {
+    //                     message: 'This field is required'
+    //                 }
+		//
+    //             }
+    //         }
+		//
+		// },
 
 
 		//////////////
-		submitHandler: function(){
-			var dataString = $("form#contactfrm").serialize();
-			$.ajax({
-			type: "POST",
-			url: "http://lithemes.com/projects/wordpress/blackair/wp-content/themes/mytheme/send.php",
-			cache: false,
-			data: dataString,
-			success:function(data)
-			{	alert (data);
-				if(data==1)
-				{
-					$("#ContactSuccessMessage").slideDown(2500);
-					$("#ContactSuccessMessage").html("<strong>Success!</strong> Your message has been sent to us.");
-					document.getElementById("ContactSuccessMessage").style.color='#FF0000';
-					return false;
-				}
-				else
-				{
-
-				$("#ContactErrorMessage").slideDown(2500);
-				$("#ContactErrorMessage").html("<strong>Error!</strong> There was an error sending your message.");
-				document.getElementById("ContactErrorMessage").style.color='#FF0000';
-					return false;
-				}
-			},
-
-		});
-		return false;
-		}
+		// submitHandler: function(){
+		// 	var dataString = $("form#contactfrm").serialize();
+		// 	$.ajax({
+		// 	type: "POST",
+		// 	url: "http://lithemes.com/projects/wordpress/blackair/wp-content/themes/mytheme/send.php",
+		// 	cache: false,
+		// 	data: dataString,
+		// 	success:function(data)
+		// 	{	alert (data);
+		// 		if(data==1)
+		// 		{
+		// 			$("#ContactSuccessMessage").slideDown(2500);
+		// 			$("#ContactSuccessMessage").html("<strong>Success!</strong> Your message has been sent to us.");
+		// 			document.getElementById("ContactSuccessMessage").style.color='#FF0000';
+		// 			return false;
+		// 		}
+		// 		else
+		// 		{
+		//
+		// 		$("#ContactErrorMessage").slideDown(2500);
+		// 		$("#ContactErrorMessage").html("<strong>Error!</strong> There was an error sending your message.");
+		// 		document.getElementById("ContactErrorMessage").style.color='#FF0000';
+		// 			return false;
+		// 		}
+		// 	},
+		//
+		// });
+		// return false;
+		// }
 		//////////////
 
 

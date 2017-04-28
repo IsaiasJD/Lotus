@@ -18,8 +18,10 @@ $(document).ready(function () {
 	$(function() {
 		$('body').on('click', '.page-scroll a', function(event) {
 			var $anchor = $(this);
+			var scrollTopValue = $($anchor.attr('href')).offset().top;
+			var scrollTo = scrollTopValue < 800 ? 0 : scrollTopValue;
 			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
+				scrollTop: scrollTo - 50
 			}, 1500, 'easeInOutExpo');
 			event.preventDefault();
 
@@ -33,7 +35,7 @@ $(document).ready(function () {
 	})
 
 	// Parallaxe  function
-	$('#parallax-2').parallax("50%",0.5);
+	//$('#parallax-2').parallax("50%",0.5);
 
 	// Carousel mini slider function
 	$('.responsive').slick({
@@ -95,39 +97,39 @@ $(document).ready(function () {
 	// Gellery function end
 
 	//////ContactForm////////
-	$("#ContactForm").validate({
-		errorElement: "p",
-		submitHandler: function(){
-			var dataString = $("form#ContactForm").serialize();
-			$.ajax({
-			type: "POST",
-			url: "contactsend.php",
-			cache: false,
-			data: dataString,
-			success:function(data)
-			{
-				if(data==1)
-				{
-					$("#ContactSuccessMessage").slideDown(500);
-					$("#ContactSuccessMessage").html("<div class='alert alert-success'><strong>Success!</strong> Your message has been sent to us.</div>");
-					//document.getElementById("ContactSuccessMessage").style.color='#FF0000';
-					$("#ContactForm")[0].reset();
-					return false;
-				}
-				else
-				{
-					$("#ContactErrorMessage").slideDown(500);
-					$("#ContactErrorMessage").html("<div class='alert alert-danger'><strong>Error!</strong> There was an error sending your message.</div>");
-					//document.getElementById("ContactErrorMessage").style.color='#FF0000';
-					$("#ContactForm")[0].reset();
-					return false;
-				}
-			},
-
-		});
-		return false;
-		}
-	});
+	// $("#ContactForm").validate({
+	// 	errorElement: "p",
+	// 	submitHandler: function(){
+	// 		var dataString = $("form#ContactForm").serialize();
+	// 		$.ajax({
+	// 		type: "POST",
+	// 		url: "contactsend.php",
+	// 		cache: false,
+	// 		data: dataString,
+	// 		success:function(data)
+	// 		{
+	// 			if(data==1)
+	// 			{
+	// 				$("#ContactSuccessMessage").slideDown(500);
+	// 				$("#ContactSuccessMessage").html("<div class='alert alert-success'><strong>Success!</strong> Your message has been sent to us.</div>");
+	// 				//document.getElementById("ContactSuccessMessage").style.color='#FF0000';
+	// 				$("#ContactForm")[0].reset();
+	// 				return false;
+	// 			}
+	// 			else
+	// 			{
+	// 				$("#ContactErrorMessage").slideDown(500);
+	// 				$("#ContactErrorMessage").html("<div class='alert alert-danger'><strong>Error!</strong> There was an error sending your message.</div>");
+	// 				//document.getElementById("ContactErrorMessage").style.color='#FF0000';
+	// 				$("#ContactForm")[0].reset();
+	// 				return false;
+	// 			}
+	// 		},
+	//
+	// 	});
+	// 	return false;
+	// 	}
+	// });
 
 	// portfolio 4 page function
 	$(window).load(function(){
