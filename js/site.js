@@ -46,13 +46,16 @@
         var startTime = parseInt(self.hoursOfOperationByDay[self.currentDayOfWeek].startTime);
         var endTime = parseInt(self.hoursOfOperationByDay[self.currentDayOfWeek].endTime);
         var isOpen = self.hoursOfOperationByDay[self.currentDayOfWeek].isOpen;
-        var isOpenText = "Today: <strong>Open</strong> " +
-          moment({
-            hour: startTime
-          }).format("h:mma") +
-          " to " + moment({
-            hour: endTime
-          }).format("h:mma");
+        var isOpenText = "<h5 class='today'>Today</h5>" +
+                          "<h1 class='status'>Open</h3>" +
+                          "<h6 class='time'>" +
+                              moment({
+                                hour: startTime
+                              }).format("ha") +
+                              "&ndash;" + moment({
+                                hour: endTime
+                              }).format("ha") +
+                            "</h6>";
         var isClosedText = "Closed Today";
         var html = isOpen ? isOpenText : isClosedText;
         self.timeDisplaySpan.html(html);

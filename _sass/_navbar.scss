@@ -1,14 +1,23 @@
 nav {
-    .lotus {
-        max-height: 75px;
-    }
+  .lotus {
 
-    ul.menu {
-        padding: 25px 0;
 
-        li.active a {
-            color: #000;
-            background: #fff;
-        }
-    }
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width : 1024px) {
+    max-height: 5rem;
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1025px) {
+      max-height: 8rem;
+  }
+  }
+
+  ul.menu {
+    padding: 25px 0;
+    // li.active a {
+    //     color: #000;
+    //     background: #fff;
+    // }
+  }
 }

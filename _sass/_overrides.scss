@@ -41,9 +41,27 @@ footer {
 }
 
 #time-display {
-  font-family: inherit;
-  color: $primary-color;
-  font-size: 20px;
+  h1, h2, h3, h4, h5, h6{
+    line-height: 4.25rem;
+    width: 100%;
+  }
+
+  .today {
+    font-size: 3rem;
+  }
+
+  .status {
+    font-size: 6rem;
+  }
+
+  .time {
+    // @media only screen and (min-width : 1025px) {
+    //     max-height: 8rem;
+    // }
+    font-family: inherit;
+    color: $primary-color;
+    font-size: 3.25rem;
+  }
 }
 
 .white-bg {
@@ -61,16 +79,19 @@ footer {
 .loader {
   color: #eee;
 }
-.filter ul li a{
-	color:#fff;
-	background:#000;
-	}
-.filter ul li a:hover,
+
+.filter ul li a {
+  color: #fff;
+  background: #000;
+}
+
 .filter ul li a.active,
-.filter ul li a:focus{
-	background:$primary-color;
-	color:#fff;
-	}
-  .titile-bg {
-    padding: 28px 28px 28px 28px;
-  }
+.filter ul li a:focus,
+.filter ul li a:hover {
+  background: $primary-color;
+  color: #fff;
+}
+
+.titile-bg {
+  padding: 28px;
+}
