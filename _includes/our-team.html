@@ -8,10 +8,10 @@
                  salon experience with the help of our dedicated team of experts.</p>
                 </div>
             </div>
-            <div class="col-xs-12 layout-padding">
-                <div class="responsive">
+            <div class="col-xs-12">
+                <div class="responsive image-fill">
                   {% for member in site.data.team %}
-                    <div class="col-xs-12 col-sm-3 col-md-3 card-member">
+                    <div class="col-xs-12 col-sm-3 col-md-4 card-member no-padding">
                         <div class="third-effect card-image">
                             {% if member.imagePath.size > 0 %}
                               <img src="{{member.imagePath}}" class="img-responsive" alt="Our Team">

@@ -55,9 +55,6 @@ footer {
   }
 
   .time {
-    // @media only screen and (min-width : 1025px) {
-    //     max-height: 8rem;
-    // }
     font-family: inherit;
     color: $primary-color;
     font-size: 3.25rem;
@@ -69,7 +66,7 @@ footer {
 }
 
 .testimonilabg {
-  height: 50rem;
+  height: 80vh;
 }
 
 .section {
@@ -94,4 +91,14 @@ footer {
 
 .titile-bg {
   padding: 28px;
+}
+
+.tbg-white {
+    float: left;
+    width: 81%;
+    background: rgba(0,0,0,.9);
+    color: #eee;
+    .reviewer-name{
+      color: #eee;
+    }
 }
