@@ -1,7 +1,7 @@
 <section class="testimonialdiv col-padtop wow fadeInUp" id="testimonials">
     <div class="container">
-      <h2 class="section-title center">Testimonials</h2>
-        <div class="testimonilabg">
+      <h2 class="section-title center">Reviews</h2>
+        <div class="testimonilabg image-fill" style="background-image: url('assets/images/salon.jpg')">
             <div id="myCarousel-2" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                   {% for review in site.data.reviews %}
@@ -14,7 +14,7 @@
                           {% endif %}
                         </div>
                         <div class="col-pad4 tbg-white">
-                            <h4>{% if review.reviewerName.size > 0 %}{{review.reviewerName}}{% else %}Client{% endif %}</h4>
+                            <h4 class="reviewer-name">{% if review.reviewerName.size > 0 %}{{review.reviewerName}}{% else %}Client{% endif %}</h4>
                             <span>
                                 {% for star in (1..review.starRating) %}
                                   <i class="fa fa-star" aria-hidden="true"></i>

@@ -2084,5 +2084,11 @@ p.error {
   /* is width and height divided by two */
 }
 h2.section-title {
-	margin-bottom: 20px !important;
+	margin-bottom: 10px !important;
+}
+
+@media only screen and (max-width : 480px) {
+  h2.section-title {
+  	margin-bottom: 0 !important;
+  }
 }
