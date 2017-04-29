@@ -146,7 +146,7 @@ $(document).ready(function () {
 
 	var $container = $('.portfoliodiv');
     $container.isotope({
-        filter: '*',
+        filter: '.coloring',
 		layoutMode: 'masonry',
         animationOptions: {
             duration: 750,
@@ -158,7 +158,6 @@ $(document).ready(function () {
     $('.filter ul li a').click(function(){
         $('.filter .active').removeClass('active');
         $(this).addClass('active');
-
         var selector = $(this).attr('data-filter');
 			if(selector=="*") $(selector).children("a.fancybox").attr("data-fancybox-group","gallery" );
 		else	$(selector).children("a.fancybox").attr("data-fancybox-group",selector.substring(1) );

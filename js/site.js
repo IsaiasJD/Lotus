@@ -90,7 +90,6 @@
         $(".animationload").delay(600).fadeOut("slow");
       });
     }
-
     function init() {
       var timeDisplay = new TimeDisplay();
       var navbar = new Navbar();
