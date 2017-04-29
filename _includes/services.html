@@ -11,10 +11,10 @@
             </div>
             <div class="col-xs-12 filter btn-group no-padding">
                 <ul>
-                    <li><a href="#" data-filter="*" class="active">All</a></li>
+                  <li><a href="#" data-filter=".coloring" class="active">Coloring</a></li>
                     <li><a href="#" data-filter=".Wcut">Cutting</a></li>
-                    <li><a href="#" data-filter=".coloring">Coloring</a></li>
                     <li><a href="#" data-filter=".Bspa">Styling</a></li>
+                    <li><a href="#" data-filter=".products">Products</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -28,7 +28,7 @@
                                   <div class="mask-img">
                                       <div class="hvrlink">
                                           <h3>coloring</h3>
-                                          <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                                          <p>Visit us or call to make an appointment.</p>
                                       </div>
                                   </div>
                               </div>
@@ -42,7 +42,7 @@
                                   <div class="mask-img">
                                       <div class="hvrlink">
                                           <h3>Style</h3>
-                                          <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                                          <p>Visit us or call to make an appointment.</p>
                                       </div>
                                   </div>
                               </div>
@@ -56,7 +56,21 @@
                                   <div class="mask-img">
                                       <div class="hvrlink">
                                           <h3>Cutting</h3>
-                                          <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                                          <p>Visit us or call to make an appointment.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      {% elsif item.type == "product" %}
+                      <div class="col-25 products">
+                          <a class="fancybox" href="{{item.picture}}" data-fancybox-group="gallery">
+                              <div class="hover">
+                                <img src="{{item.picture}}" alt="Portfolio" />
+                                  <div class="mask-img">
+                                      <div class="hvrlink">
+                                          <h3>Product</h3>
+                                          <p>See store for pricing.</p>
                                       </div>
                                   </div>
                               </div>
