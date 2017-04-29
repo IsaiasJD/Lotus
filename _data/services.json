@@ -91,6 +91,34 @@
     {
       "type": "cutting",
       "picture": "assets/images/Misc-5.jpg"
+    },
+    {
+      "type": "product",
+      "picture": "assets/images/Product-1.jpg"
+    },
+    {
+      "type": "product",
+      "picture": "assets/images/Product-2.jpg"
+    },
+    {
+      "type": "product",
+      "picture": "assets/images/Product-3.jpg"
+    },
+    {
+      "type": "product",
+      "picture": "assets/images/Product-4.jpg"
+    },
+    {
+      "type": "product",
+      "picture": "assets/images/Product-5.jpg"
+    },
+    {
+      "type": "product",
+      "picture": "assets/images/Product-6.jpg"
+    },
+    {
+      "type": "product",
+      "picture": "assets/images/Product-7.jpg"
     }
   ]
 }

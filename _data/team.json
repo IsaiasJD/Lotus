@@ -10,7 +10,8 @@
       }
     ],
     "imagePath": "assets/images/Worker-1.jpg",
-    "description": "Curabitur ullamcorper ultricies nisi. Maecenas malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue. Nam auctor nisi est, nec tempus lacus."
+    "title": "Store Owner",
+    "description": "Store Owner"
   },
   {
     "firstName": "Armando",
@@ -23,7 +24,8 @@
       }
     ],
     "imagePath": "assets/images/Worker-2.jpg",
-    "description": "Vivamus euismod mauris. Nunc nulla. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros."
+    "title": "Barber",
+    "description": "Barber"
   },
   {
     "firstName": "Rocio",
@@ -36,6 +38,7 @@
       }
     ],
     "imagePath": "assets/images/Worker-3.jpg",
-    "description": "Vestibulum dapibus nunc ac augue. Phasellus a est. Vestibulum fringilla pede sit amet augue."
+    "title": "Stylist",
+    "description": "Stylist"
   }
 ]
