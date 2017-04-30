@@ -56,7 +56,8 @@
                                 hour: endTime
                               }).format("ha") +
                             "</h6>";
-        var isClosedText = "Closed Today";
+        var isClosedText = "<h5 class='today'>Today</h5>" +
+                            "<h1 class='status closed'>Closed</h3>";
         var html = isOpen ? isOpenText : isClosedText;
         self.timeDisplaySpan.html(html);
       }
