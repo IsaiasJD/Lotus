@@ -1,14 +1,14 @@
-/*------------------------------------------ 
+/*------------------------------------------
 		Name:lightbox.css
 
-		#Gellery Portfolio lightbox 
+		#Gellery Portfolio lightbox
 		#Images hover Hover Effect
 		#Media Query
-		
+
 --------------------------------------------*/
 
 /*---------------------------------------------
-	#Gellery Portfolio lightbox 
+	#Gellery Portfolio lightbox
 -----------------------------------------------*/
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp {
 	padding: 0;
@@ -69,7 +69,7 @@
 	max-height: 100%
 }
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url(../images/fancybox_sprite.png)
+	background-image: url(../assets/images/fancybox_sprite.png)
 }
 #fancybox-loading {
 	position: fixed;
@@ -85,7 +85,7 @@
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url(../images/fancybox_loading.gif) center center no-repeat
+	background: url(../assets/images/fancybox_loading.gif) center center no-repeat
 }
 .fancybox-close {
 	position: absolute;
@@ -103,7 +103,7 @@
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url(../images/blank.gif);
+	background: transparent url(../assets/images/blank.gif);
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	z-index: 8040
 }
@@ -160,7 +160,7 @@
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url(../images/fancybox_overlay.png);
+	background: url(../assets/images/fancybox_overlay.png);
 	width: 100%
 }
 .fancybox-overlay-fixed {
@@ -227,11 +227,11 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url(../images/fancybox_sprite@2x.png);
+	background-image: url(../assets/images/fancybox_sprite@2x.png);
 	background-size: 44px 152px
 }
 #fancybox-loading div {
-	background-image: url(../images/fancybox_loading@2x.gif);
+	background-image: url(../assets/images/fancybox_loading@2x.gif);
 	background-size: 24px 24px
 }
 }
@@ -259,33 +259,33 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url(../images/fancybox_sprite@2x.png);
+	background-image: url(../assets/images/fancybox_sprite@2x.png);
 	background-size: 44px 152px
 }
 #fancybox-loading div {
-	background-image: url(../images/fancybox_loading@2x.gif);
+	background-image: url(../assets/images/fancybox_loading@2x.gif);
 	background-size: 24px 24px
 }
 }
 
 @media (min-width: 600px) and (max-width: 640px) {
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url(../images/fancybox_sprite@2x.png);
+	background-image: url(../assets/images/fancybox_sprite@2x.png);
 	background-size: 44px 152px
 }
 #fancybox-loading div {
-	background-image: url(../images/fancybox_loading@2x.gif);
+	background-image: url(../assets/images/fancybox_loading@2x.gif);
 	background-size: 24px 24px
 }
 }
 
 @media (max-width: 480px) {
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url(../images/fancybox_sprite@2x.png);
+	background-image: url(../assets/images/fancybox_sprite@2x.png);
 	background-size: 44px 152px
 }
 #fancybox-loading div {
-	background-image: url(../images/fancybox_loading@2x.gif);
+	background-image: url(../assets/images/fancybox_loading@2x.gif);
 	background-size: 24px 24px
 }
 }
