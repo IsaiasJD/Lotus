@@ -1,0 +1,14 @@
+{
+  "name": "lotus",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^2.1.2",
+    "gulp": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isaias68/Lotus.git"
+  },
+  "license": "ISC",
+}
