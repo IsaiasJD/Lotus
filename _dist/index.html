@@ -40,6 +40,10 @@
             </li>
           
             <li class="page-scroll">
+              <a class="" href="#availability">View Availability</a>
+            </li>
+          
+            <li class="page-scroll">
               <a class="" href="#contact">Contact Us</a>
             </li>
           
@@ -71,6 +75,10 @@
               
                 <li class="page-scroll">
                   <a href="#testimonials">Reviews</a>
+                </li>
+              
+                <li class="page-scroll">
+                  <a href="#availability">View Availability</a>
                 </li>
               
                 <li class="page-scroll">
@@ -120,6 +128,7 @@
         <div class="white-bg">
           <p> Come and enjoy an excellent salon experience only Lotus 2 Hair Salon can provide.  We are staffed by trained professionals specializing in a wide variety of haircuts and styles.
             In addition, we offer high quality hair products for both men and women ranging from hair gels to treatment products.  At Lotus 2 Hair Salon, we are confident in our ability to provide proper customer care and satisfaction.  </p>
+            <p class="purple-text">To show our appreciation, Lotus 2 Hair Salon will be hosting a Mother's Day promotion from May 8th-13th.  Selected items will be 20% off, as well special offers for all mothers.  Come visit us for more details.</p>
         </div>
       </div>
     </div>
@@ -217,7 +226,8 @@
                 <h2 class="section-title">Our Services</h2>
                 <div class="layout-padding">
                 <p>Within our welcoming atmosphere, we specialize in a wide variety of haircut and styling options for both men and women.
-                  In addition, we offer hair removal services conducted by trained and licensed professionals to ensure customer satisfaction (Visit us for pricing details).</p>
+                  In addition, we offer hair removal services conducted by trained and licensed professionals to ensure customer satisfaction.</p>
+                  <p class="purple-text">(Visit us for pricing details).</p>
                   </div>
             </div>
             </div>
@@ -963,6 +973,25 @@
     </div>
 </section>
 
+        <section id="availability" class="wow fadeInUp col-padtop" ng-app="Scheduler">
+    <div class="container" ng-controller="AvailabilityController as vm">
+        <div class="row">
+            <div class="col-sm-12 layout-padding">
+                <h2 class="center section-title">Availability</h2>
+                <div class="center ourteamd">
+                    <p>Whether it is a special occasion or a revitalization, we pride ourselves in the ability to provide the ultimate
+                 salon experience with the help of our dedicated team of experts.  With this support, we are able to offer diverse styling options for men and women.</p>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <!-- <h1 ng-AvailabilityController="vm.htmlFunc()"></h1> -->
+                <h1 ng-repeat="foo in vm.bar">//foo//</h1>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</section>
+
         <section id="contact" class="wow fadeInUp col-padtop image-fill" style="background-image: url('assets/images/Tools-1.jpg')">
     <div class="container">
         <div class="row">
@@ -1045,7 +1074,10 @@
 
         <a href="#" class="scrollup">Top</a>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="js/angular-google-gapi.min.js"></script>
+<script src="js/availability.controller.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 <script src="js/jquery.1.11.2.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/function.js"></script>

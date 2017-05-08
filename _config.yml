@@ -22,3 +22,5 @@ exclude: [Gemfile, Gemfile.lock, node_modules, gulpfile.js, dist, production]
 #include: [_pages]
 permalink: none
 destination: _dist
+gems:
+  - jekyll-angular
