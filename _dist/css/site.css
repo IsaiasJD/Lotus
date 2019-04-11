@@ -48,6 +48,11 @@ section:not(.footer-first):not(.footer-second) {
   overflow: hidden;
   background-size: contain; }
 
+.purple-text {
+  color: #7355a3;
+  font-weight: bold;
+  font-style: italic; }
+
 nav .lotus {
   /* Medium Devices, Desktops */
   /* Large Devices, Wide Screens */ }
