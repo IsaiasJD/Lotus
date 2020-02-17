@@ -6,7 +6,7 @@
       var self = this;
       self.HOURS_OF_OPERATION = {
         "Monday": {
-          "isOpen": flase
+          "isOpen": false
           /*
           "isOpen": true,
           "startTime": "9:00",
