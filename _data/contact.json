@@ -2,32 +2,32 @@
     "hof":[
       {
       "weekday": "Sunday",
-      "hours": "Closed",
+      "hours": "Closed"
       },
       {
         "weekday": "Monday",
-        "hours": "9AM–7PM",
+        "hours": "Closed"
       },
       {
         "weekday": "Tuesday",
-        "hours": "9AM–7PM",
+        "hours": "9AM–7PM"
       },
       {
         "weekday": "Wednesday",
-        "hours": "9AM–7PM",
+        "hours": "9AM–7PM"
       },
       {
         "weekday": "Thursday",
-        "hours": "9AM–7PM",
+        "hours": "9AM–7PM"
       },
       {
         "weekday": "Friday",
-        "hours": "9AM–7PM",
+        "hours": "9AM–7PM"
       },
       {
         "weekday": "Saturday",
-        "hours": "9AM-5PM",
-      },
+        "hours": "9AM-5PM"
+      }
 
     ]
 }
