@@ -6,12 +6,12 @@
       var self = this;
       self.HOURS_OF_OPERATION = {
         "Monday": {
-          "isOpen": false
-          /*
+          // "isOpen": false
+          
           "isOpen": true,
           "startTime": "9:00",
           "endTime": "19:00"
-          */
+          
         },
         "Tuesday": {
           "isOpen": true,
