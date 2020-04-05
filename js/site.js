@@ -6,37 +6,42 @@
       var self = this;
       self.HOURS_OF_OPERATION = {
         "Monday": {
-          // "isOpen": false
+          "isOpen": false
           
-          "isOpen": true,
-          "startTime": "9:00",
-          "endTime": "19:00"
+          // "isOpen": true,
+          // "startTime": "9:00",
+          // "endTime": "19:00"
           
         },
         "Tuesday": {
-          "isOpen": true,
-          "startTime": "9:00",
-          "endTime": "19:00"
+          "isOpen": false
+        //   "isOpen": true,
+        //   "startTime": "9:00",
+        //   "endTime": "19:00"
         },
         "Wednesday": {
-          "isOpen": true,
-          "startTime": "9:00",
-          "endTime": "19:00"
+          "isOpen": false
+        //   "isOpen": true,
+        //   "startTime": "9:00",
+        //   "endTime": "19:00"
         },
         "Thursday": {
-          "isOpen": true,
-          "startTime": "9:00",
-          "endTime": "19:00"
+          "isOpen": false
+        //   "isOpen": true,
+        //   "startTime": "9:00",
+        //   "endTime": "19:00"
         },
         "Friday": {
-          "isOpen": true,
-          "startTime": "9:00",
-          "endTime": "19:00"
+          "isOpen": false
+        //   "isOpen": true,
+        //   "startTime": "9:00",
+        //   "endTime": "19:00"
         },
         "Saturday": {
-          "isOpen": true,
-          "startTime": "9:00",
-          "endTime": "17:00"
+          "isOpen": false
+        //   "isOpen": true,
+        //   "startTime": "9:00",
+        //   "endTime": "17:00"
         },
         "Sunday": {
           "isOpen": false
