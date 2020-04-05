@@ -12,33 +12,5 @@
     "imagePath": "assets/images/Worker-1.jpg",
     "title": "Store Owner",
     "description": "Store Owner"
-  },
-  {
-    "firstName": "Armando",
-    "lastName": "Rocha",
-    "socialMedias":[
-      {
-        "platform": "Facebook",
-        "class": "facebook",
-        "link": "https://www.facebook.com/AYY.YOU"
-      }
-    ],
-    "imagePath": "assets/images/Worker-2.jpg",
-    "title": "Barber",
-    "description": "Barber"
-  },
-  {
-    "firstName": "Rocio",
-    "lastName": "Nuño",
-    "socialMedias":[
-      {
-        "platform": "Facebook",
-        "class": "facebook",
-        "link": "https://www.facebook.com/rocio.chavarin"
-      }
-    ],
-    "imagePath": "assets/images/Worker-3.jpg",
-    "title": "Stylist",
-    "description": "Stylist"
   }
 ]
